@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.O.P</title>
+    <link rel="shortcut icon" href="Logo/COP logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+<body >
+    <nav class="nav collapsible collapsible-expanded">
+        <a href="#"><img class="logo" src="Logo/COP logo.svg" alt=""></a>
+        <ul class="list nav-list collapsible-content">
+            <li class="list-item"><a href="#" id="contact">Contact</a></li>
+            <li class="list-item"><a href="#" id="about">About</a></li>
+            <li class="list-item"><a href="#" id="stats">Statistics</a></li>
+            <li class="list-item"><a href="#" id="profile">Login</a></li>
+        </ul>
+        <input class="search collapsible-content" type="search" name="" placeholder="Search...">
+    </nav>
+    
+    <div class="btn">
+        <i class="fa-solid fa-comment-slash"></i>
+    </div>
+    <div class="side-menu">
+        <h1>Comment Section</h1>
+    </div>
+
+    <div class="modal modal-about">
+        <div class="modal-content">
+            <div class="close close-about"><i class="fa-solid fa-multiply"></i></div>
+            <h1 class="modal-header">About Us</h1>
+
+            <div class="modal-text">
+                <h2>Developers <i class="fa-solid fa-seedling"></i> </h2>
+
+                <div class="profiles">
+                    <div class="dev-profile">
+                        <div class="shape"></div>
+                        <h3 class="dev-name">Thembi Dibotelo</h3>
+                        <div class="dev-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="dev-profile">
+                        <div class="shape"></div>
+                        <h3 class="dev-name">Tlatso Tsebe</h3>
+                        <div class="dev-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="dev-profile">
+                        <div class="shape"></div>
+                        <h3 class="dev-name">Thembi Dibotelo</h3>
+                        <div class="dev-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>About Project <i class="fa-solid fa-seedling"></i> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum deleniti sed quibusdam nesciunt obcaecati similique reiciendis explicabo, eveniet dolorum blanditiis sit ducimus sunt cupiditate quis, cumque voluptatibus nam at repudiandae ad amet odio temporibus? Quos quae saepe harum natus repellat praesentium debitis dolore id ab sint voluptate ipsam iure tenetur esse velit nisi, aliquam, tempora et consequuntur, quisquam recusandae similique? Sunt blanditiis tenetur placeat accusantium qui numquam sit ipsam harum nesciunt. Ea, rem dolorem cupiditate molestiae quasi dolorum, nam vitae minus veritatis enim nulla nisi adipisci pariatur aperiam odio illum, ipsum sequi temporibus aliquam earum! Magni esse consectetur cupiditate.</p>
+                
+                <h2>Vision <i class="fa-solid fa-seedling"></i> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum deleniti sed quibusdam nesciunt obcaecati similique reiciendis explicabo, eveniet dolorum blanditiis sit ducimus sunt cupiditate quis, cumque voluptatibus nam at repudiandae ad amet odio temporibus? Quos quae saepe harum natus repellat praesentium debitis dolore id ab sint voluptate ipsam iure tenetur esse velit nisi, aliquam, tempora et consequuntur, quisquam recusandae similique? Sunt blanditiis tenetur placeat accusantium qui numquam sit ipsam harum nesciunt. Ea, rem dolorem cupiditate molestiae quasi dolorum, nam vitae minus veritatis enim nulla nisi adipisci pariatur aperiam odio illum, ipsum sequi temporibus aliquam earum! Magni esse consectetur cupiditate.</p>
+
+                <img class="UB-logo" src="images/UB-logo.png" alt="UB Logo">
+            </div>
+
+            <footer><p>&copy Students of Computer Science @ UB-BW 2022</p></footer>
+            
+        </div>
+
+    </div>
+
+    <div class="modal modal-contact">
+        <div class="modal-content">
+            <div class="close close-contact"><i class="fa-solid fa-multiply"></i></div>
+            <h1 class="modal-header">Contact Us</h1>
+            <p class="contact-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero obcaecati mollitia perferendis quaerat, ducimus debitis. Minus neque autem nostrum!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="box">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <div class="box-text">
+                            <h3>Facebook</h3>
+                            <p>Citiens On Patrol</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="box-text">
+                            <h3>WhatsApp</h3>
+                            <p>+267 76937470</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <div class="box-text">
+                            <h3>GitHub</h3>
+                            <p>Citiens On Patrol</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <div class="box-text">
+                            <h3>Email</h3>
+                            <p>COP.bw@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                        <div class="box-text">
+                            <h3>Location</h3>
+                            <p>Gaborone, Tlokweng, University of Botswana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="">
+                        <h2>Send Us A Message</h2>
+                        <div class="input-box">
+                            <input type="text" name="" required placeholder="Fullname">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="" required placeholder="Email">
+                        </div>
+                        <div class="input-box">
+                            <textarea required placeholder="Type your message..."></textarea>
+                        </div>
+                        <div class="input-button">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal modal-stats">
+        <div class="modal-content">
+            <div class="close close-stats"><i class="fa-solid fa-multiply"></i></div>
+            <h1 class="modal-header">Statistics</h1>
+            <p class="contact-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero obcaecati mollitia
+                perferendis quaerat, ducimus debitis. Minus neque autem nostrum!</p>
+
+            <footer>
+                <p>&copy Students of Computer Science @ UB-BW 2022</p>
+            </footer>
+    
+        </div>
+    
+    </div>
+
+    <div class="modal modal-profile">
+        <div class="modal-content">
+            <div class="close close-profile"><i class="fa-solid fa-multiply"></i></div>
+            <h1 class="modal-header">Login / Signup</h1>
+            <div class="login">
+                <div class="login-btns">
+                    <a class="log-btn" href="#">Login</a>
+                    <a class="signup-btn" href="#">Signup</a>
+                </div>
+                <div class="login-signup">
+                    <div class="login-form">
+                        <h2 class="login-header">Log in to access our features</h2>
+                        <form action="">
+                            <input class="email" type="email" name="email" required placeholder="Email">
+                            <input class="email" type="password" name="password" required placeholder="Password">
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                    <div class="signup-form">
+                        <h2 class="login-header">Sign up for free</h2>
+                        <form action="">
+                            <input  type="text" name="firstname" required placeholder="Firstname">
+                            <input class="name" type="text" name="lastname" required placeholder="Lastname">
+                            <input class="email" type="email" name="email" required placeholder="Email">
+                            <input class="email" type="password" name="password" required placeholder="Password">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <p class="TnC">By signing up, you agree to our <span style="color:#c11717; font-weight:bold;">Terms and Conditions</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="map"></div>
+
+    
+
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.side-menu').toggleClass("show");
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
